@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DealWithItGlasses"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = 'An iOS library containing a programmatic implementation of the deal with it sunglasses UI'
   s.homepage     = "https://github.com/ecerney/DealWithItGlasses"
   s.author             = { "Eric Cerney" => "ecerney@gmail.com" }
