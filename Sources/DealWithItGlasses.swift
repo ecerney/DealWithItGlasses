@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class DealWithItGlasses: UIView {
+public class DealWithItGlasses: UIView {
 
   private enum PixelColor: Int {
     case clear = 0, black, gray
@@ -38,7 +38,7 @@ final class DealWithItGlasses: UIView {
     return pixels.first?.count ?? 0
   }
 
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
 
@@ -56,7 +56,7 @@ final class DealWithItGlasses: UIView {
     self.init(origin: .zero, width: width)
   }
 
-  override func draw(_ rect: CGRect) {
+  override public func draw(_ rect: CGRect) {
     guard let context = UIGraphicsGetCurrentContext() else { return }
 
     let pixelWidth = rect.width / CGFloat(DealWithItGlasses.numPixelsWidth)
