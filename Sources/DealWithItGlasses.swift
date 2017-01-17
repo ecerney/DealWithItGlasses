@@ -9,8 +9,7 @@
 import UIKit
 
 public class DealWithItGlasses: UIView {
-
-  private enum PixelColor: Int {
+  public enum PixelColor: Int {
     case clear = 0, black, gray
 
     var cgColor: CGColor {
@@ -22,7 +21,7 @@ public class DealWithItGlasses: UIView {
     }
   }
 
-  static let pixels = [
+  public static let pixels = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1],
     [0, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 0],
@@ -30,11 +29,11 @@ public class DealWithItGlasses: UIView {
     [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
   ]
 
-  static var numPixelsHeight: Int {
+  public static var numPixelsHeight: Int {
     return pixels.count
   }
 
-  static var numPixelsWidth: Int {
+  public static var numPixelsWidth: Int {
     return pixels.first?.count ?? 0
   }
 
@@ -42,17 +41,17 @@ public class DealWithItGlasses: UIView {
     super.init(coder: aDecoder)
   }
 
-  init(origin: CGPoint, width: CGFloat) {
+  public init(origin: CGPoint, width: CGFloat) {
     let height = width * CGFloat(DealWithItGlasses.numPixelsHeight) / CGFloat(DealWithItGlasses.numPixelsWidth)
     super.init(frame: CGRect(x: origin.x, y: origin.y, width: width, height: height))
     backgroundColor = .clear
   }
 
-  override convenience init(frame: CGRect) {
+  override public convenience init(frame: CGRect) {
     self.init(origin: frame.origin, width: frame.width)
   }
 
-  convenience init(width: CGFloat) {
+  public convenience init(width: CGFloat) {
     self.init(origin: .zero, width: width)
   }
 
