@@ -18,6 +18,7 @@
 		02118A581E2DA9B5005ADB4E /* DealWithItGlasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealWithItGlasses.swift; sourceTree = "<group>"; };
 		02118A5B1E2DA9EF005ADB4E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		02118A6B1E2DB25E005ADB4E /* DealWithItGlasses.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DealWithItGlasses.podspec; sourceTree = SOURCE_ROOT; };
+		02118A6F1E2DB828005ADB4E /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 			children = (
 				02118A5B1E2DA9EF005ADB4E /* README.md */,
 				02118A6B1E2DB25E005ADB4E /* DealWithItGlasses.podspec */,
+				02118A6F1E2DB828005ADB4E /* Package.swift */,
 			);
 			name = Metadata;
 			path = DealWithItGlasses;
